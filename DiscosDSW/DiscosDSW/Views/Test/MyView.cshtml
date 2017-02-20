@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div> 
+        @{
+            DiscosDSW.Models.Cliente c = (DiscosDSW.Models.Cliente)
+                ViewData["Cliente"];
+        }
+
+        <b>Detalles cliente</b><br />
+        Nombre Cliente : @c.Nombre <br />
+        Email Cliente : @c.Email <br />
+        Password Cliente : @c.Password <br />
+    </div>
+</body>
+</html>
